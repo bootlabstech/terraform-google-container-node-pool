@@ -10,6 +10,7 @@ resource "google_container_node_pool" "node_pool" {
   autoscaling {
     min_node_count = var.node_pool_min_count
     max_node_count = var.node_pool_max_count
+    total_max_node_count = var.total_max_node_count
   }
 
   management {
@@ -39,4 +40,3 @@ resource "google_container_node_pool" "node_pool" {
     ]
   }
 }
-

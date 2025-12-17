@@ -91,3 +91,7 @@ variable "disk_size_gb" {
   type        = number
   description = "disk_size_gb"
 }
+variable "total_max_node_count" {
+  type = number
+  description = "provide max total node count"
+}
